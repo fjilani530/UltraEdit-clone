@@ -1,0 +1,292 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    width: 92vw;
+    /* border: 2px solid black; */
+    justify-self: center;
+    /* margin-top: 10px; */
+    align-content: center;
+    padding:0px;
+    /* display: flex; */
+    /* flex-direction:; */
+
+}
+nav {
+    display: flex;
+    justify-content:space-between ;
+    align-content: center;
+    
+}
+nav  .menus{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    /* border: 1px solid black; */
+}
+nav .menus .menu{
+    align-self: center;
+} 
+main{
+    width: 100vw;
+    text-align: center;
+    margin-top: 70px;
+    /* border: 2px solid black; */
+}
+main .line1{
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+    font-size: 48px;
+    font-weight: 400;
+}
+main .line1 img{
+    margin-top: 15px;
+}
+main .line2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+main .button button{
+    padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 23px;
+        padding-right: 23px;
+        border-radius: 5px;
+        border: none;
+        background-color: #07bbd6;
+        /*  rgb(47, 163, 183); */
+        margin-top: 35px;
+        align-self: center;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+
+}
+main .button button:hover{
+    background-color: #09a6bd;
+}
+main .bottom{
+    display:flex;
+    gap: 3px;
+    flex-direction: row;
+    /* border: 2px solid black; */
+    width: 80vw;
+    justify-self: center;
+    margin-top: 65px;
+    /* justify-content: center; */
+    /* justify-content: center; */
+
+}
+main .bottom .text1{
+   align-self: center;
+   font-size: 24px;
+}
+main .bottom .text2{
+    align-self: center;
+    font-size: 14px;
+}
+nav .menus .menu:hover{
+    cursor:pointer;
+}
+main  .line1 img:hover{
+    cursor: pointer;
+}
+nav .icon img:hover{
+    cursor: pointer;
+}
+.boxes{
+    width: 80vw;
+    justify-self: center;
+    margin-top: 15px;
+    /* border: 2px solid black; */
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.box{
+    border: none;
+    width: 304px;
+    height: 170px;
+    /* gap: 10px; */
+    margin: 20px;
+    place-self: center;
+    background-color:#f9f9f9;
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    /* font-family: poppins; */
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+    @media only screen and (max-width:1240px) {
+        .boxes{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+        main{
+            justify-self: center;
+        }
+        
+    }
+    @media only screen and (max-width:800px){
+        .boxes{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(10,1fr);
+        }
+        main{
+            justify-self: center;
+        }
+    }
+    .box h3{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* border: 2px solid black; */
+        /* font-family: poppins; */
+        font-weight: 700;
+
+    }
+    .box a button{
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 7px;
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        /* font-family: poppins; */
+        font-weight: 600;
+        font-size: 12px;
+        /* margin-left: 50px;
+        margin-right: 50px; */
+    }
+    .box h6{
+       /* font-family: poppins; */
+       font-weight: 300;
+       font-size: 10px;
+       margin-top: 5px;
+       margin-bottom: 5px;
+    }
+    .box p{
+       /* font-family: poppins; */
+       font-weight: 300;
+       font-size: 8px;
+    }
+    .box button:hover{
+       cursor: pointer;
+    }
+    .box h5{
+       /* font-family: poppins; */
+       font-weight: 300;
+       font-size: 12px;
+       margin-top: 15px;
+       margin-bottom: 15px;
+    }
+    #third{
+        background-color: rgb(34, 34, 34);
+        width: 100vw;
+        /* padding: 20px; */
+       /* margin-top: 50px; */
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        /* text-align: center; */
+    }
+    #third #one{
+        display: flex;
+        justify-content: space-between;
+        justify-self: center;
+        /* gap: 30px; */
+        width: 70vw;
+        height: 45vh;
+        /* padding: 10px; */
+        /* border: 2px solid white ; */
+        margin-top: 50px;
+    }
+    #third .textbox{
+        color: white;
+        width: 35vw;
+        align-self:end;
+        padding: 25px;
+        /* height: 35vh; */
+        /* border: 2px solid white; */
+        text-align:center;
+
+    }
+    #third .textbox .tb{
+        margin-top: 10px;
+    }
+    #third #one .input{
+        background-color: white;
+        width: 23vw;
+        height: 37vh;
+        align-self: flex-end;
+        text-align: center;
+        border-radius: 15px;
+        padding: 25px;
+    }
+    #third #one .input h1{
+        color: #07bbd6;
+        font-weight: 400;
+    }
+    #third #one .input p{
+        color: black;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    #third #one .input input{
+        height: 40px;
+        width: 20vw;
+        margin-top: 3px;
+        border:1px solid rgb(174, 173, 173);
+    }
+    #third #one .input button{
+        width: 21vw;
+        height: 45px;
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        color: white;
+        background-color: #07bbd6;
+        border: none;
+        border-radius: 5px;
+        box-shadow: #06a2ba;
+        cursor: pointer;
+    }
+    #third #two{
+        width: 70vw;
+        color:white ;
+        /* border: 2px solid #f9f9f9; */
+        margin-top: 20vh;
+        justify-self: center;
+        
+        /* line-height: 25px; */
+    }
+    #third #two .h{
+        font-weight: 400;
+    }
+    #third #two .firsts{
+        margin-top: 25px;
+        /* border: 2px solid white; */
+        /* padding-top: 15px; */
+    }
+    #third #two .link{
+        color: #07bbd6;
+    } 
+    #third #two .link:hover{
+        cursor: pointer;
+    } 
